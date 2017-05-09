@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC2ACF7E1EC28CEF00E3E082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2ACF7D1EC28CEF00E3E082 /* AppDelegate.swift */; };
+		EC2ACF801EC28CEF00E3E082 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2ACF7F1EC28CEF00E3E082 /* ViewController.swift */; };
+		EC2ACF831EC28CEF00E3E082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2ACF811EC28CEF00E3E082 /* Main.storyboard */; };
+		EC2ACF861EC28CF000E3E082 /* Login_and_Registration.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC2ACF841EC28CF000E3E082 /* Login_and_Registration.xcdatamodeld */; };
+		EC2ACF881EC28CF000E3E082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC2ACF871EC28CF000E3E082 /* Assets.xcassets */; };
+		EC2ACF8B1EC28CF000E3E082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2ACF891EC28CF000E3E082 /* LaunchScreen.storyboard */; };
+		EC2ACF961EC28CF000E3E082 /* Login_and_RegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2ACF951EC28CF000E3E082 /* Login_and_RegistrationTests.swift */; };
+		EC2ACFA11EC28CF000E3E082 /* Login_and_RegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2ACFA01EC28CF000E3E082 /* Login_and_RegistrationUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC2ACF921EC28CF000E3E082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC2ACF721EC28CEF00E3E082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC2ACF791EC28CEF00E3E082;
+			remoteInfo = "Login and Registration";
+		};
+		EC2ACF9D1EC28CF000E3E082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC2ACF721EC28CEF00E3E082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC2ACF791EC28CEF00E3E082;
+			remoteInfo = "Login and Registration";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC2ACF7A1EC28CEF00E3E082 /* Login and Registration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Login and Registration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2ACF7D1EC28CEF00E3E082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC2ACF7F1EC28CEF00E3E082 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC2ACF821EC28CEF00E3E082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC2ACF851EC28CF000E3E082 /* Login_and_Registration.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Login_and_Registration.xcdatamodel; sourceTree = "<group>"; };
+		EC2ACF871EC28CF000E3E082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC2ACF8A1EC28CF000E3E082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC2ACF8C1EC28CF000E3E082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2ACF911EC28CF000E3E082 /* Login and RegistrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Login and RegistrationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2ACF951EC28CF000E3E082 /* Login_and_RegistrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_and_RegistrationTests.swift; sourceTree = "<group>"; };
+		EC2ACF971EC28CF000E3E082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2ACF9C1EC28CF000E3E082 /* Login and RegistrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Login and RegistrationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2ACFA01EC28CF000E3E082 /* Login_and_RegistrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_and_RegistrationUITests.swift; sourceTree = "<group>"; };
+		EC2ACFA21EC28CF000E3E082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC2ACF771EC28CEF00E3E082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2ACF8E1EC28CF000E3E082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2ACF991EC28CF000E3E082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC2ACF711EC28CEF00E3E082 = {
+			isa = PBXGroup;
+			children = (
+				EC2ACF7C1EC28CEF00E3E082 /* Login and Registration */,
+				EC2ACF941EC28CF000E3E082 /* Login and RegistrationTests */,
+				EC2ACF9F1EC28CF000E3E082 /* Login and RegistrationUITests */,
+				EC2ACF7B1EC28CEF00E3E082 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC2ACF7B1EC28CEF00E3E082 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC2ACF7A1EC28CEF00E3E082 /* Login and Registration.app */,
+				EC2ACF911EC28CF000E3E082 /* Login and RegistrationTests.xctest */,
+				EC2ACF9C1EC28CF000E3E082 /* Login and RegistrationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC2ACF7C1EC28CEF00E3E082 /* Login and Registration */ = {
+			isa = PBXGroup;
+			children = (
+				EC2ACF7D1EC28CEF00E3E082 /* AppDelegate.swift */,
+				EC2ACF7F1EC28CEF00E3E082 /* ViewController.swift */,
+				EC2ACF811EC28CEF00E3E082 /* Main.storyboard */,
+				EC2ACF871EC28CF000E3E082 /* Assets.xcassets */,
+				EC2ACF891EC28CF000E3E082 /* LaunchScreen.storyboard */,
+				EC2ACF8C1EC28CF000E3E082 /* Info.plist */,
+				EC2ACF841EC28CF000E3E082 /* Login_and_Registration.xcdatamodeld */,
+			);
+			path = "Login and Registration";
+			sourceTree = "<group>";
+		};
+		EC2ACF941EC28CF000E3E082 /* Login and RegistrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC2ACF951EC28CF000E3E082 /* Login_and_RegistrationTests.swift */,
+				EC2ACF971EC28CF000E3E082 /* Info.plist */,
+			);
+			path = "Login and RegistrationTests";
+			sourceTree = "<group>";
+		};
+		EC2ACF9F1EC28CF000E3E082 /* Login and RegistrationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC2ACFA01EC28CF000E3E082 /* Login_and_RegistrationUITests.swift */,
+				EC2ACFA21EC28CF000E3E082 /* Info.plist */,
+			);
+			path = "Login and RegistrationUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC2ACF791EC28CEF00E3E082 /* Login and Registration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2ACFA51EC28CF000E3E082 /* Build configuration list for PBXNativeTarget "Login and Registration" */;
+			buildPhases = (
+				EC2ACF761EC28CEF00E3E082 /* Sources */,
+				EC2ACF771EC28CEF00E3E082 /* Frameworks */,
+				EC2ACF781EC28CEF00E3E082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Login and Registration";
+			productName = "Login and Registration";
+			productReference = EC2ACF7A1EC28CEF00E3E082 /* Login and Registration.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC2ACF901EC28CF000E3E082 /* Login and RegistrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2ACFA81EC28CF000E3E082 /* Build configuration list for PBXNativeTarget "Login and RegistrationTests" */;
+			buildPhases = (
+				EC2ACF8D1EC28CF000E3E082 /* Sources */,
+				EC2ACF8E1EC28CF000E3E082 /* Frameworks */,
+				EC2ACF8F1EC28CF000E3E082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC2ACF931EC28CF000E3E082 /* PBXTargetDependency */,
+			);
+			name = "Login and RegistrationTests";
+			productName = "Login and RegistrationTests";
+			productReference = EC2ACF911EC28CF000E3E082 /* Login and RegistrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC2ACF9B1EC28CF000E3E082 /* Login and RegistrationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC2ACFAB1EC28CF000E3E082 /* Build configuration list for PBXNativeTarget "Login and RegistrationUITests" */;
+			buildPhases = (
+				EC2ACF981EC28CF000E3E082 /* Sources */,
+				EC2ACF991EC28CF000E3E082 /* Frameworks */,
+				EC2ACF9A1EC28CF000E3E082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC2ACF9E1EC28CF000E3E082 /* PBXTargetDependency */,
+			);
+			name = "Login and RegistrationUITests";
+			productName = "Login and RegistrationUITests";
+			productReference = EC2ACF9C1EC28CF000E3E082 /* Login and RegistrationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC2ACF721EC28CEF00E3E082 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Sammy Doueck";
+				TargetAttributes = {
+					EC2ACF791EC28CEF00E3E082 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					EC2ACF901EC28CF000E3E082 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC2ACF791EC28CEF00E3E082;
+					};
+					EC2ACF9B1EC28CF000E3E082 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC2ACF791EC28CEF00E3E082;
+					};
+				};
+			};
+			buildConfigurationList = EC2ACF751EC28CEF00E3E082 /* Build configuration list for PBXProject "Login and Registration" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC2ACF711EC28CEF00E3E082;
+			productRefGroup = EC2ACF7B1EC28CEF00E3E082 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC2ACF791EC28CEF00E3E082 /* Login and Registration */,
+				EC2ACF901EC28CF000E3E082 /* Login and RegistrationTests */,
+				EC2ACF9B1EC28CF000E3E082 /* Login and RegistrationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC2ACF781EC28CEF00E3E082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2ACF8B1EC28CF000E3E082 /* LaunchScreen.storyboard in Resources */,
+				EC2ACF881EC28CF000E3E082 /* Assets.xcassets in Resources */,
+				EC2ACF831EC28CEF00E3E082 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2ACF8F1EC28CF000E3E082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2ACF9A1EC28CF000E3E082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC2ACF761EC28CEF00E3E082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2ACF861EC28CF000E3E082 /* Login_and_Registration.xcdatamodeld in Sources */,
+				EC2ACF801EC28CEF00E3E082 /* ViewController.swift in Sources */,
+				EC2ACF7E1EC28CEF00E3E082 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2ACF8D1EC28CF000E3E082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2ACF961EC28CF000E3E082 /* Login_and_RegistrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2ACF981EC28CF000E3E082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC2ACFA11EC28CF000E3E082 /* Login_and_RegistrationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC2ACF931EC28CF000E3E082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC2ACF791EC28CEF00E3E082 /* Login and Registration */;
+			targetProxy = EC2ACF921EC28CF000E3E082 /* PBXContainerItemProxy */;
+		};
+		EC2ACF9E1EC28CF000E3E082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC2ACF791EC28CEF00E3E082 /* Login and Registration */;
+			targetProxy = EC2ACF9D1EC28CF000E3E082 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC2ACF811EC28CEF00E3E082 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC2ACF821EC28CEF00E3E082 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC2ACF891EC28CF000E3E082 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC2ACF8A1EC28CF000E3E082 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC2ACFA31EC28CF000E3E082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC2ACFA41EC28CF000E3E082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC2ACFA61EC28CF000E3E082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Login and Registration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.Login-and-Registration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EC2ACFA71EC28CF000E3E082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Login and Registration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.Login-and-Registration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EC2ACFA91EC28CF000E3E082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Login and RegistrationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.Login-and-RegistrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Login and Registration.app/Login and Registration";
+			};
+			name = Debug;
+		};
+		EC2ACFAA1EC28CF000E3E082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Login and RegistrationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.Login-and-RegistrationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Login and Registration.app/Login and Registration";
+			};
+			name = Release;
+		};
+		EC2ACFAC1EC28CF000E3E082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Login and RegistrationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.Login-and-RegistrationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Login and Registration";
+			};
+			name = Debug;
+		};
+		EC2ACFAD1EC28CF000E3E082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Login and RegistrationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sample.Login-and-RegistrationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Login and Registration";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC2ACF751EC28CEF00E3E082 /* Build configuration list for PBXProject "Login and Registration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2ACFA31EC28CF000E3E082 /* Debug */,
+				EC2ACFA41EC28CF000E3E082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC2ACFA51EC28CF000E3E082 /* Build configuration list for PBXNativeTarget "Login and Registration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2ACFA61EC28CF000E3E082 /* Debug */,
+				EC2ACFA71EC28CF000E3E082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC2ACFA81EC28CF000E3E082 /* Build configuration list for PBXNativeTarget "Login and RegistrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2ACFA91EC28CF000E3E082 /* Debug */,
+				EC2ACFAA1EC28CF000E3E082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC2ACFAB1EC28CF000E3E082 /* Build configuration list for PBXNativeTarget "Login and RegistrationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC2ACFAC1EC28CF000E3E082 /* Debug */,
+				EC2ACFAD1EC28CF000E3E082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC2ACF841EC28CF000E3E082 /* Login_and_Registration.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC2ACF851EC28CF000E3E082 /* Login_and_Registration.xcdatamodel */,
+			);
+			currentVersion = EC2ACF851EC28CF000E3E082 /* Login_and_Registration.xcdatamodel */;
+			path = Login_and_Registration.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EC2ACF721EC28CEF00E3E082 /* Project object */;
+}
