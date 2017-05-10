@@ -10,6 +10,10 @@ import UIKit
 
 class RegisterPageViewController: UIViewController {
 
+    @IBOutlet weak var UserEmailTextFeild: UITextField!
+    @IBOutlet weak var UserPasswordTextFeild: UITextField!
+    @IBOutlet weak var ConfirmPasswordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +25,33 @@ class RegisterPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func RegisterButtonTapped(sender: AnyObject) {
+        
+        let userEmail = UserEmailTextFeild.text;
+        let userPassword = UserPasswordTextFeild.text;
+        let userConfirmPassword = ConfirmPasswordTextField.text;
+       
+        //display alert message with confirmation
+    
+        
+        
+        //check for empty feilds
+        if((userEmail?.isEmpty)! || (userPassword?.isEmpty)! || (userConfirmPassword?.isEmpty)!)
+        {
+            print("AHH");
+            return;
+        }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+        //check if passwords match
+        if(userPassword != userConfirmPassword)
+        {
+            print("Hello");
+            return;
+        }
+        // store data
+       UserDefaults.standard.set(userEmail, forKey: "userEmail");
+        UserDefaults.standard.set(userEmail, forKey: "userPassword");
+//        UserDefaults.standard(_).synchronize();
+ 
+}
 }

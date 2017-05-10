@@ -15,6 +15,7 @@
 		EC2ACF8B1EC28CF000E3E082 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2ACF891EC28CF000E3E082 /* LaunchScreen.storyboard */; };
 		EC2ACF961EC28CF000E3E082 /* Login_and_RegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2ACF951EC28CF000E3E082 /* Login_and_RegistrationTests.swift */; };
 		EC2ACFA11EC28CF000E3E082 /* Login_and_RegistrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2ACFA01EC28CF000E3E082 /* Login_and_RegistrationUITests.swift */; };
+		EC2ACFB11EC29D3500E3E082 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2ACFB01EC29D3500E3E082 /* RegisterPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EC2ACF9C1EC28CF000E3E082 /* Login and RegistrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Login and RegistrationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2ACFA01EC28CF000E3E082 /* Login_and_RegistrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login_and_RegistrationUITests.swift; sourceTree = "<group>"; };
 		EC2ACFA21EC28CF000E3E082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2ACFB01EC29D3500E3E082 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				EC2ACF891EC28CF000E3E082 /* LaunchScreen.storyboard */,
 				EC2ACF8C1EC28CF000E3E082 /* Info.plist */,
 				EC2ACF841EC28CF000E3E082 /* Login_and_Registration.xcdatamodeld */,
+				EC2ACFB01EC29D3500E3E082 /* RegisterPageViewController.swift */,
 			);
 			path = "Login and Registration";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2ACFB11EC29D3500E3E082 /* RegisterPageViewController.swift in Sources */,
 				EC2ACF861EC28CF000E3E082 /* Login_and_Registration.xcdatamodeld in Sources */,
 				EC2ACF801EC28CEF00E3E082 /* ViewController.swift in Sources */,
 				EC2ACF7E1EC28CEF00E3E082 /* AppDelegate.swift in Sources */,
