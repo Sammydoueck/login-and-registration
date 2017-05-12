@@ -10,52 +10,32 @@ import UIKit
 import FirebaseDatabase;
 import Firebase;
 
-weak var UserEmailTextFeild: UITextField!
-weak var UserPasswordTextFeild: UITextField!
-weak var ConfirmPasswordTextField: UITextField!
-weak var errorBlank: UILabel!
-weak var errorEmail: UILabel!
-weak var errorPass: UILabel!
-weak var errorMatch: UILabel!
-weak var errorShort: UILabel!
-
-let userEmail = UserEmailTextFeild.text;
-let userPassword = UserPasswordTextFeild.text;
-let userConfirmPassword = ConfirmPasswordTextField.text;
-
-
-
 /* TODO: 1. check for blanks (.isEmpty)
- TODO: 2.check for all spaces
+ TODO: 2. check for all spaces
  TODO: 3. check for illegal characters (use errorEmail)
  TODO: 4. check if passwords match
  TODO: 5. email already found (use errorEmail)
  TODO: 6. write to database
  TODO: 7. customize (make it look nice)
  TODO: 8. make incorrect password shake
- TODO: 9. make labels (make them hidden)(errorPass.hidden)
+ 9. make labels (make them hidden)(errorPass.hidden)- done
  TODO: 10. make constraints
  
  */
 
-if ( !( userEmail.includes(".") && userEmail.includes("$") && userEmail.includes("[") && userEmail.includes("]") && userEmail.includes("#") && userEmail.includes(" ") ) && userEmail.isEmpty && userPassword === userConfirmPassword && userPassword.length > 5 && userPassword.trim() = ""
-{
-    errorPass.hidden = false;
-    return;
-}
-
- if
- {
- var account = Account(email: userEmail!, password: userPassword!);
- firebaseRef.child(account.email).setValue(account.password, forKey: "password")
-
- }
-
-
 
 class RegisterPageViewController: UIViewController {
 
-
+    @IBOutlet var errorBlank: UILabel!
+    @IBOutlet var userEmailTextField: UITextField!
+    @IBOutlet var errorEmail: UILabel!
+    @IBOutlet var userPasswordTextField: UITextField!
+    @IBOutlet var errorMatch: UILabel!
+    @IBOutlet var errorPass: UILabel!
+    @IBOutlet var errorShort: UILabel!
+    @IBOutlet var userConfirmPasswordTextField: UITextField!
+    @IBOutlet var termsAgree: UISwitch!
+    @IBOutlet var errorTerms: UILabel!
     
     var firebaseRef: FIRDatabaseReference!
     
@@ -73,19 +53,50 @@ class RegisterPageViewController: UIViewController {
     
     @IBAction func RegisterButtonTapped(sender: AnyObject) {
         
+        let userEmail = userEmailTextField.text;
+        let userPassword = userPasswordTextField.text;
+        let userConfirmPassword = userConfirmPasswordTextField.text;
         
-    
-               // Remember me data
-//       UserDefaults.standard.set(userEmail, forKey: "userEmail");
-//        UserDefaults.standard.set(userEmail, forKey: "userPassword");
-//        UserDefaults.standard(_).synchronize();
+        if userEmail?.range(of: ".") != nil || ((userEmail?.range(of: "#")) != nil) || ((userEmail?.range(of: "$")) != nil) || ((userEmail?.range(of: "[")) != nil) || ((userEmail?.range(of: "]")) != nil)
+        {
+            errorEmail.isHidden = false;
+            
+            
+            print(userEmail!.contains("@") && userEmail!.contains("$"));
+            
+            return;
+        }
+        if (userEmail?.isEmpty)!
+        {
+            errorBlank.isHidden = false;
+            return;
+        }
         
-        /* sending to firebase
-         
-         
-         
- */
- 
+        if !termsAgree.isOn
+        {
+            errorTerms.isHidden = false;
+            return;
+        }
+        
+        if userPassword != userConfirmPassword
+        {
+            errorMatch.isHidden = false;
+            return;
+        }
+        if (userPassword?.characters.count)! < 5
+        {
+            errorShort.isHidden = false;
+            return;
+        }
+        if (userPasswordTextField.text?.trim().isEmpty)!
+        {
+            errorPass.isHidden = false;
+            return;
+        }
+        
+        
+        firebaseRef.child("\(userEmail!.lowercased())").setValue("\(userPassword!)")
+        self.performSegue(withIdentifier: "frontEnd", sender: nil)
     }
 }
 
@@ -98,5 +109,13 @@ class Account
     {
         self.email = email
         self.password = password
+    }
+}
+
+extension String
+{
+    func trim() -> String
+    {
+        return self.trimmingCharacters(in: NSCharacterSet.whitespaces)
     }
 }
